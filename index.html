@@ -189,7 +189,7 @@
                         <a href=""><i class="fab fa-twitter" style="font-size: 2.4rem; margin-right: 1rem;"></i></a>
                     </div>
                     <div class="col-6 login-link">
-                        <ul class="header_link right hidden">
+                        <ul class="header_link right hidden-pc">
                             <li>
                                 <a href="./login.html"><i class="fas fa-sign-in-alt mr-2"></i>Đăng nhập</a>
                             </li>
@@ -1290,7 +1290,7 @@
     <script>
         document.querySelector('.header_user-item .logout').addEventListener('click', function(e){
             e.preventDefault()
-            document.querySelector('.header_link').classList.remove('hidden')
+            document.querySelector('.header_link').classList.remove('hidden-pc')
             document.querySelector('.header_user').classList.add('hidden')
         })
         

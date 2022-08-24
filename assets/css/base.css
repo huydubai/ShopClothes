@@ -131,7 +131,7 @@ a:hover {
         padding: 0;
 }
 .hidden {
-    display: none !important;
+    display: none;
 }
 .actived {
     display: block;

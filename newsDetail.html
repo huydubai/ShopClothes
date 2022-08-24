@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Clothes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- link font chữ -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- link icon -->
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- link css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/productdetail.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./assets/img/logo/favicon.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Overlay -->
+    <div class="overlay hidden"></div>
+    <div class="mobile-menu ">
+        <div class="mobile-menu__header">
+            <a href="./accountManagement.html">
+                <div class="mobile-menu__auth">
+                    <img src="./assets/img/product/giayxah2.jpg" alt="" class="__auth-img">
+                    <p class="__auth-text">Đăng nhập <br> Nhận nhiều ưu đãi hơn</p>
+                </div>
+            </a>
+            <div class="mobie-menu__close">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <ul class="__auth-list">
+            <li class="__auth-item">
+                <a href="./login.html" class="__auth-link">Đăng nhập</a>
+            </li>
+            <li class="__auth-item">
+                <a href="./register.html" class="__auth-link">Đăng ký</a>
+            </li>
+        </ul>
+        <div class="category">
+            <h3 class="category-title">Danh mục</h3>
+            <ul class="category-list">
+                <li class="category-item">
+                    <a href="./index.html" class="category-link">Trang chủ</a>
+                </li>
+                <li class="category-item">
+                    <a href="./intro.html" class="category-link">Giới thiệu</a>
+                </li>
+                <li class="category-item">
+                    <a href="./product.html" class="category-link key">
+                        Sản phẩm
+                        <i class="fas fa-plus cong category-icon"></i><i
+                            class="fas fa-minus tru category-icon hidden"></i>
+                    </a>
+                    <ul class="__list hidden">
+                        <li class="__item ">
+                            <a href="./product.html" class="__link">
+                                Tất cả sản phẩm
+                                <i class="fas fa-plus cong1 category-icon" onclick="show2(1)"></i><i
+                                    class="fas fa-minus tru1 category-icon hidden" onclick="show2(1)"></i>
+                            </a>
+                            <ul class="__list1 list-item1 hidden">
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Bóng đá</a>
+                                </li>
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Chạy</a>
+                                </li>
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Cầu lông</a>
+                                </li>
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Bóng rổ</a>
+                                </li>
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Golf</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="__item">
+                            <a href="./product.html" class="__link">
+                                Giày, Dép
+                                <i class="fas fa-plus cong2 category-icon" onclick="show2(2)"></i><i
+                                    class="fas fa-minus tru2 category-icon hidden" onclick="show2(2)"></i>
+                            </a>
+                            <ul class="__list1 list-item2 hidden">
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Bóng đá</a>
+                                </li>
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Bóng rổ</a>
+                                </li>
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Cầu lông</a>
+                                </li>
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Chạy</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="__item">
+                            <a href="./product.html" class="__link">
+                                Quần, Áo
+                                <i class="fas fa-plus cong3 category-icon" onclick="show2(3)"></i><i
+                                    class="fas fa-minus tru3 category-icon hidden" onclick="show2(3)"></i>
+                            </a>
+                            <ul class="__list1 list-item3 hidden">
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Váy</a>
+                                </li>
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Áo dài</a>
+                                </li>
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Áo sơ mi</a>
+                                </li>
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Quần ngắn</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="__item">
+                            <a href="./product.html" class="__link">
+                                Phụ kiện
+                                <i class="fas fa-plus cong4 category-icon" onclick="show2(4)"></i><i
+                                    class="fas fa-minus tru4 category-icon hidden" onclick="show2(4)"></i>
+                            </a>
+                            <ul class="__list1 list-item4 hidden">
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Vợt</a>
+                                </li>
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Cà vạt</a>
+                                </li>
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Thắt lưng</a>
+                                </li>
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Kính</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="category-item">
+                    <a href="" class="category-link">Tin tức</a>
+                </li>
+                <li class="category-item">
+                    <a href="./contact.html" class="category-link">Liên hệ</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="top-link clearfix ">
+                <div class="row">
+                    <div class="col-6 social_link">
+                        <div class="social-title">Theo dõi:</div>
+                        <a href=""><i class="fab fa-facebook" style="font-size: 2.4rem; margin-right: 1rem;"></i></a>
+                        <a href=""><i class="fab fa-instagram"
+                                style="font-size: 2.4rem; margin-right: 1rem; color: violet;"></i></a>
+                        <a href=""><i class="fab fa-youtube"
+                                style="font-size: 2.4rem; margin-right: 1rem; color: red;"></i></a>
+                        <a href=""><i class="fab fa-twitter" style="font-size: 2.4rem; margin-right: 1rem;"></i></a>
+                    </div>
+                    <div class="col-6 login-link">
+                        <ul class="header_link right">
+                            <li>
+                                <a href="./login.html"><i class="fas fa-sign-in-alt mr-2"></i>Đăng nhập</a>
+                            </li>
+                            <li>
+                                <a href="./register.html"><i class="fas fa-user-plus mr-2" style="margin-left: 2rem;"></i>Đăng ký</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header-main clearfix">
+                <div class="row">
+                    <div class="col-lg-3 mobile-header">
+                        <div class="header-bars">
+                            <i class="fas fa-bars header-bars__icon"></i>
+                        </div>
+                        <div class="logo">
+                            <a href="">
+                                <img src="./assets/img/logo/logo.jpg" alt="" class="logo-img">
+                            </a>
+                        </div>
+                        <div class="header-card">
+                            <a href="./cart.html" class="item-like__like">
+                                <i class="fas fa-shopping-cart item-like__icon"></i>
+                                <span class="item-like__notice">3</span>
+                            </a>
+                            <a href="./favorite.html" class="item-cart__like">
+                                <i class="far fa-heart item-cart__icon"></i>
+                                <span class="item-cart__notice">3</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 m-auto">
+                        <form action="" class="example">
+                            <input type="text" name="search" id="" class="input-search" placeholder="Tìm kiếm">
+                            <button type="submit" class="search-btn"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                    <div class="col-3 m-auto mobile-none">
+                        <div class="item-like clearfix">
+                            <a href="./cart.html" class="item-like__like">
+                                <i class="fas fa-shopping-cart item-like__icon"></i>
+                                <span class="item-like__notice">3</span>
+                            </a>
+                        </div>
+                        <div class="item-cart clearfix">
+                            <a href="./favorite.html" class="item-cart__like">
+                                <i class="far fa-heart item-cart__icon"></i>
+                                <span class="item-cart__notice">3</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="header-nav">
+                <div class="container">
+                    <ul class="header-nav__list">
+                        <li class="header-nav__item">
+                            <a href="./index.html">Trang chủ</a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="./intro.html">Giới thiệu</a>
+                        </li>
+                        <li class="header-nav__item product-list">
+                            <a href="./product.html">Sản phẩm<i class="fas fa-angle-right ml-2"></i></a>
+                            <div class="mega-content">
+                                <div class="row">
+                                    <div class="col-8 ">
+                                        <ul class="mega-content__list">
+                                            <li class="mega-content__item">
+                                                <a href="./product.html" class="mega-content__link">Tất cả sản phẩm</a>
+                                            </li>
+                                            <li class="mega-content__item list-mega">
+                                                <a href="./product.html" class="mega-content__link">Giày, dép</a>
+                                                <ul class="list">
+                                                    <li class="item">
+                                                        <a href="#" class="item-link">Bóng đá</a>
+                                                    </li>
+                                                    <li class="item">
+                                                        <a href="./product.html" class="item-link">Bóng rổ</a>
+                                                    </li>
+                                                    <li class="item">
+                                                        <a href="./product.html" class="item-link">Cầu lông</a>
+                                                    </li>
+                                                    <li class="item">
+                                                        <a href="./product.html" class="item-link">Chạy</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="mega-content__item list-mega">
+                                                <a href="./product.html" class="mega-content__link ">Quần, áo</a>
+                                                <ul class="list">
+                                                    <li class="item">
+                                                        <a href="./product.html" class="item-link">Váy</a>
+                                                    </li>
+                                                    <li class="item">
+                                                        <a href="./product.html" class="item-link">Áo dài</a>
+                                                    </li>
+                                                    <li class="item">
+                                                        <a href="./product.html" class="item-link">Áo sơ mi</a>
+                                                    </li>
+                                                    <li class="item">
+                                                        <a href="./product.html" class="item-link">Quần ngắn</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="mega-content__item list-mega">
+                                                <a href="./product.html" class="mega-content__link">Phụ kiện</a>
+                                                <ul class="list">
+                                                    <li class="item">
+                                                        <a href="./product.html" class="item-link">Vợt</a>
+                                                    </li>
+                                                    <li class="item">
+                                                        <a href="./product.html" class="item-link">Cà vạt</a>
+                                                    </li>
+                                                    <li class="item">
+                                                        <a href="./product.html" class="item-link">Thắt lưng</a>
+                                                    </li>
+                                                    <li class="item">
+                                                        <a href="./product.html" class="item-link">Kính</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-4 ">
+                                        <a href="./product.html">
+                                            <picture>
+                                                <img src="./assets/img/bigsale.gif" alt="" class="picture-sale">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="./news.html">Tin tức</a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="./contact.html">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Container -->
+    <div class="container">
+        <div class="news">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="news-header">CHÍNH THỨC RA MẮT THẾ HỆ TIẾP THEO CỦA ADIDAS X MANG TÊN ADIDAS X SPEEDPORTAL</div>
+                        <div class="news-time"><i class="far fa-clock" style="margin-right: 10px;"></i>20 Tháng Tám 2022</div>
+                        <div class="news-content">
+                            <div class="news-text">
+                                Sau thành công vang dội của adidas X Speedflow, dòng giày nhanh nhất và phù hợp với mọi vị trí của adidas, giờ đây adidas ra mắt thế hệ tiếp theo thậm chí còn nhanh hơn và cải tiến hơn thế hệ trước.
+                            </div>
+                            <img src="./assets/img/product/newdetail1.jpg" alt="" class="news-img">
+                            <div class="news-img-title">Giày đá bóng adidas X Speedportal</div>
+                            <div class="news-text-bold">
+                                Hình ảnh của Adidas X Speedportal thế hệ tiếp theo
+                            </div>
+                            <div class="news-text">
+                                Adidas có một chút thay đổi về diện mạo khi lần đầu tiên sử dụng thiết kế nhận diện thương hiệu với hình ảnh logo cách điệu mà không sử dụng chữ như trước nữa.
+                            </div>
+                            <img src="./assets/img/product/newdetail2.jpg" alt="" class="news-img">
+                            <div class="news-img-title">Giày đá bóng adidas X Speedportal</div>
+                            <div class="news-text">
+                                Màu sắc cũng không hề đụng hàng với đôi giày khác khi X Speedportal khoác lên mình bộ giáp màu xanh ngả vàng, và được tô điểm bằng những chi tiết màu đen khiến cầu thủ luôn nổi bật trên sân đấu.
+                            </div>
+                            <img src="./assets/img/product/newdetail3.jpg" alt="" class="news-img">
+                            <div class="news-img-title">Giày đá bóng adidas X Speedportal</div>
+                            <div class="news-text">
+                                Biểu tượng của adidas là 3 vạch kẻ cũng được đặt ở vị trí khác so với bản X Speedflow. Nếu ở thế hệ cũ chúng được đặt ở bên hông thì ở thế hệ mới này adidas đã di chuyển logo lên gần phía mũi giày hơn.
+                            </div>
+                            <img src="./assets/img/product/newdetail4.jpg" alt="" class="news-img">
+                            <div class="news-img-title">Giày đá bóng adidas X Speedportal</div>
+                            <div class="news-text-bold" style="font-size: 1.8rem;">
+                                Sự đổi mới của giày đá bóng adidas X Speedportal
+                            </div>
+                            <div class="news-text">
+                                <span class="news-text-bold">Công nghệ Speedframe</span> <br/>
+                                Phiên bản X Speedflow cũng sở hữu công nghệ này, nhưng đến thế hệ tiếp theo thì nó đã được nâng cấp. Với mặt đế là hệ thống các sợi carbon, cùng với việc thêm công nghệ Carbitex mới, và để tạo ra chuyển động nhanh hơn, adidas đã thiết kế đinh giày ngắn hơn một chút. Kết hợp với hai loại định mới, đôi giày này vẫn rất ổn định trên sân cỏ.
+                            </div>
+                            <img src="./assets/img/product/newdetail5.jpg" alt="" class="news-img">
+                            <div class="news-text">
+                                <span class="news-text-bold">Công nghệ Stability Frame</span> <br/>
+                                Để đảm bảo sự ổn định, adidas đã tạo ra hệ thống StabilityWing và khóa gót, được thêm một miếng đệm carbon để tăng thêm độ ổn định. Hệ thống mới sẽ tạo ra một đôi giày ôm chân, không hạn chế bất kỳ chuyển động nào của cầu thủ. Điều này tạo ra một đôi giày tốc độ ổn định nhất từ trước đến nay của adidas, với trọng lượng giảm đi đáng kể.
+                            </div>
+                            <img src="./assets/img/product/newdetail6.jpg" alt="" class="news-img">
+                            <div class="news-text">
+                                <span class="news-text-bold">Công nghệ Speedskin</span> <br/>
+                                Được sinh ra từ khuôn mẫu của X Speedflow, đôi giày này mang lại cảm giác rất giống với thế hệ trước. Nhưng nhờ có các chấm silicone trên mu bàn chân, Speedportal bám chắc chân hơn. Adidas đã làm điều đó để tạo ra một đôi giày hoàn hảo.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-all">
+                    <a href="./news.html" class="news-all-text">
+                        <i class="fi-rs-angle-left news-all-icon"></i>
+                        Quay lại
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <img src="./assets/img/logo/logo.jpg" alt="" style="width: 100px; height: 100px" class="footer-img">
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <p><i class="fas fa-search-location footer-item__icon"></i>Ha Noi, Viet Nam</p>
+                        </li>
+                        <li class="footer-item">
+                            <p><i class="fas fa-phone-square-alt footer-item__icon"></i>Phone: <a
+                                    href="tel:0398328925">0398328925</a></p>
+                        </li>
+                        <li class="footer-item">
+                            <p><i class="fas fa-envelope-square footer-item__icon"></i><a
+                                    href="mailto:huydz4102@gmail.com">huydz4102@gmail.com</a></p>
+                        </li>
+                        <li class="footer-item">
+                            <a href=""><i class="fab fa-facebook"
+                                    style="font-size: 2.4rem; margin-right: 1rem;"></i></a>
+                            <a href=""><i class="fab fa-instagram"
+                                    style="font-size: 2.4rem; margin-right: 1rem; color: violet;"></i></a>
+                            <a href=""><i class="fab fa-youtube"
+                                    style="font-size: 2.4rem; margin-right: 1rem; color: red;"></i></a>
+                            <a href=""><i class="fab fa-twitter" style="font-size: 2.4rem; margin-right: 1rem;"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <!-- style="cursor: pointer;" data-toggle="collapse" data-target="#demo1" aria-expanded="true" -->
+                    <h3 class="footer-heading">
+                        Thông tin của chúng tôi
+                        <!-- <i class="fas fa-chevron-circle-down"></i> -->
+                    </h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Cơ sở 1: Số 8 Ngõ 44/7/7 Nhân Hòa, Nhân Chính, Thanh
+                                Xuân, Hà Nội</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Cơ sở 2: Số 96 Định Công, Thanh Xuân, Hà Nội</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Lĩnh vực kinh doanh</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="footer-heading">Chính sách</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Chính sách bảo hành</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Chính sách đổi trả</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Chính sách thanh toán</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Chính sách giao nhận hàng</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Chính sách bảo mật</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="footer-heading">DANH MỤC</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="./index.html" class="footer-item__link">Trang chủ</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="./intro.html" class="footer-item__link">Giới thiệu</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="./product.html" class="footer-item__link">Sản phẩm</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Tin tức</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="./contact.html" class="footer-item__link">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-text">© Bản quyền thuộc về XChanel Shop</p>
+        </div>
+    </footer>
+    <div id="go-to-top">
+        <div class="btn-gototop">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    </div>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

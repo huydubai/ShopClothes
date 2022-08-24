@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Clothes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- link font chữ -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- link icon -->
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- link css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/productdetail.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./assets/img/logo/favicon.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Overlay -->
+    <div class="overlay hidden"></div>
+    <div class="mobile-menu ">
+        <div class="mobile-menu__header">
+            <a href="./accountManagement.html">
+                <div class="mobile-menu__auth">
+                    <img src="./assets/img/product/giayxah2.jpg" alt="" class="__auth-img">
+                    <p class="__auth-text">Đăng nhập <br> Nhận nhiều ưu đãi hơn</p>
+                </div>
+            </a>
+            <div class="mobie-menu__close">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <ul class="__auth-list">
+            <li class="__auth-item">
+                <a href="./login.html" class="__auth-link">Đăng nhập</a>
+            </li>
+            <li class="__auth-item">
+                <a href="./register.html" class="__auth-link">Đăng ký</a>
+            </li>
+        </ul>
+        <div class="category">
+            <h3 class="category-title">Danh mục</h3>
+            <ul class="category-list">
+                <li class="category-item">
+                    <a href="./index.html" class="category-link">Trang chủ</a>
+                </li>
+                <li class="category-item">
+                    <a href="./intro.html" class="category-link">Giới thiệu</a>
+                </li>
+                <li class="category-item">
+                    <a href="./product.html" class="category-link key">
+                        Sản phẩm
+                        <i class="fas fa-plus cong category-icon"></i><i
+                            class="fas fa-minus tru category-icon hidden"></i>
+                    </a>
+                    <ul class="__list hidden">
+                        <li class="__item ">
+                            <a href="./product.html" class="__link">
+                                Tất cả sản phẩm
+                                <i class="fas fa-plus cong1 category-icon" onclick="show2(1)"></i><i
+                                    class="fas fa-minus tru1 category-icon hidden" onclick="show2(1)"></i>
+                            </a>
+                            <ul class="__list1 list-item1 hidden">
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Bóng đá</a>
+                                </li>
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Chạy</a>
+                                </li>
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Cầu lông</a>
+                                </li>
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Bóng rổ</a>
+                                </li>
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Golf</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="__item">
+                            <a href="./product.html" class="__link">
+                                Giày, Dép
+                                <i class="fas fa-plus cong2 category-icon" onclick="show2(2)"></i><i
+                                    class="fas fa-minus tru2 category-icon hidden" onclick="show2(2)"></i>
+                            </a>
+                            <ul class="__list1 list-item2 hidden">
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Bóng đá</a>
+                                </li>
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Bóng rổ</a>
+                                </li>
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Cầu lông</a>
+                                </li>
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Chạy</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="__item">
+                            <a href="./product.html" class="__link">
+                                Quần, Áo
+                                <i class="fas fa-plus cong3 category-icon" onclick="show2(3)"></i><i
+                                    class="fas fa-minus tru3 category-icon hidden" onclick="show2(3)"></i>
+                            </a>
+                            <ul class="__list1 list-item3 hidden">
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Váy</a>
+                                </li>
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Áo dài</a>
+                                </li>
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Áo sơ mi</a>
+                                </li>
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Quần ngắn</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="__item">
+                            <a href="./product.html" class="__link">
+                                Phụ kiện
+                                <i class="fas fa-plus cong4 category-icon" onclick="show2(4)"></i><i
+                                    class="fas fa-minus tru4 category-icon hidden" onclick="show2(4)"></i>
+                            </a>
+                            <ul class="__list1 list-item4 hidden">
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Vợt</a>
+                                </li>
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Cà vạt</a>
+                                </li>
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Thắt lưng</a>
+                                </li>
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Kính</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="category-item">
+                    <a href="" class="category-link">Tin tức</a>
+                </li>
+                <li class="category-item">
+                    <a href="./contact.html" class="category-link">Liên hệ</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="top-link clearfix ">
+                <div class="row">
+                    <div class="col-6 social_link">
+                        <div class="social-title">Theo dõi:</div>
+                        <a href=""><i class="fab fa-facebook" style="font-size: 2.4rem; margin-right: 1rem;"></i></a>
+                        <a href=""><i class="fab fa-instagram"
+                                style="font-size: 2.4rem; margin-right: 1rem; color: violet;"></i></a>
+                        <a href=""><i class="fab fa-youtube"
+                                style="font-size: 2.4rem; margin-right: 1rem; color: red;"></i></a>
+                        <a href=""><i class="fab fa-twitter" style="font-size: 2.4rem; margin-right: 1rem;"></i></a>
+                    </div>
+                    <div class="col-6 login-link">
+                        <ul class="header_link right">
+                            <li>
+                                <a href="./login.html"><i class="fas fa-sign-in-alt mr-2"></i>Đăng nhập</a>
+                            </li>
+                            <li>
+                                <a href="./register.html"><i class="fas fa-user-plus mr-2" style="margin-left: 2rem;"></i>Đăng ký</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header-main clearfix">
+                <div class="row">
+                    <div class="col-lg-3 mobile-header">
+                        <div class="header-bars">
+                            <i class="fas fa-bars header-bars__icon"></i>
+                        </div>
+                        <div class="logo">
+                            <a href="">
+                                <img src="./assets/img/logo/logo.jpg" alt="" class="logo-img">
+                            </a>
+                        </div>
+                        <div class="header-card">
+                            <a href="./cart.html" class="item-like__like">
+                                <i class="fas fa-shopping-cart item-like__icon"></i>
+                                <span class="item-like__notice">3</span>
+                            </a>
+                            <a href="./favorite.html" class="item-cart__like">
+                                <i class="far fa-heart item-cart__icon"></i>
+                                <span class="item-cart__notice">3</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 m-auto">
+                        <form action="" class="example">
+                            <input type="text" name="search" id="" class="input-search" placeholder="Tìm kiếm">
+                            <button type="submit" class="search-btn"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                    <div class="col-3 m-auto mobile-none">
+                        <div class="item-like clearfix">
+                            <a href="./cart.html" class="item-like__like">
+                                <i class="fas fa-shopping-cart item-like__icon"></i>
+                                <span class="item-like__notice">3</span>
+                            </a>
+                        </div>
+                        <div class="item-cart clearfix">
+                            <a href="./favorite.html" class="item-cart__like">
+                                <i class="far fa-heart item-cart__icon"></i>
+                                <span class="item-cart__notice">3</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="header-nav">
+                <div class="container">
+                    <ul class="header-nav__list">
+                        <li class="header-nav__item">
+                            <a href="./index.html">Trang chủ</a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="./intro.html">Giới thiệu</a>
+                        </li>
+                        <li class="header-nav__item product-list">
+                            <a href="./product.html">Sản phẩm<i class="fas fa-angle-right ml-2"></i></a>
+                            <div class="mega-content">
+                                <div class="row">
+                                    <div class="col-8 ">
+                                        <ul class="mega-content__list">
+                                            <li class="mega-content__item">
+                                                <a href="./product.html" class="mega-content__link">Tất cả sản phẩm</a>
+                                            </li>
+                                            <li class="mega-content__item list-mega">
+                                                <a href="./product.html" class="mega-content__link">Giày, dép</a>
+                                                <ul class="list">
+                                                    <li class="item">
+                                                        <a href="#" class="item-link">Bóng đá</a>
+                                                    </li>
+                                                    <li class="item">
+                                                        <a href="./product.html" class="item-link">Bóng rổ</a>
+                                                    </li>
+                                                    <li class="item">
+                                                        <a href="./product.html" class="item-link">Cầu lông</a>
+                                                    </li>
+                                                    <li class="item">
+                                                        <a href="./product.html" class="item-link">Chạy</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="mega-content__item list-mega">
+                                                <a href="./product.html" class="mega-content__link ">Quần, áo</a>
+                                                <ul class="list">
+                                                    <li class="item">
+                                                        <a href="./product.html" class="item-link">Váy</a>
+                                                    </li>
+                                                    <li class="item">
+                                                        <a href="./product.html" class="item-link">Áo dài</a>
+                                                    </li>
+                                                    <li class="item">
+                                                        <a href="./product.html" class="item-link">Áo sơ mi</a>
+                                                    </li>
+                                                    <li class="item">
+                                                        <a href="./product.html" class="item-link">Quần ngắn</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="mega-content__item list-mega">
+                                                <a href="./product.html" class="mega-content__link">Phụ kiện</a>
+                                                <ul class="list">
+                                                    <li class="item">
+                                                        <a href="./product.html" class="item-link">Vợt</a>
+                                                    </li>
+                                                    <li class="item">
+                                                        <a href="./product.html" class="item-link">Cà vạt</a>
+                                                    </li>
+                                                    <li class="item">
+                                                        <a href="./product.html" class="item-link">Thắt lưng</a>
+                                                    </li>
+                                                    <li class="item">
+                                                        <a href="./product.html" class="item-link">Kính</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-4 ">
+                                        <a href="./product.html">
+                                            <picture>
+                                                <img src="./assets/img/bigsale.gif" alt="" class="picture-sale">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="./news.html" class="active">Tin tức</a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="./contact.html">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Container -->
+    <div class="container">
+        <div class="news">
+            <div class="container">
+                <div class="row" id="new">
+
+                </div>
+                <div class="loadmore page-new">
+                    <ul class="loadmore-list">
+                        <li class="loadmore-item">
+                            <a href="" class="loadmore-link disabled page-prev">
+                                <i class="fas fa-angle-left"></i></a>
+                        </li>
+                        <li class="loadmore-item">
+                            <a href="" class="loadmore-link pagination actived page1">1</a>
+                        </li>
+                        <li class="loadmore-item">
+                            <a href="" class="loadmore-link pagination page2">2</a>
+                        </li>
+                        <li class="loadmore-item">
+                            <a href="" class="loadmore-link pagination page3">3</a>
+                        </li>
+                        <li class="loadmore-item">
+                            <a href="" class="loadmore-link pagination page4">4</a>
+                        </li>
+                        <li class="loadmore-item">
+                            <a href="" class="loadmore-link pagination page5">5</a>
+                        </li>
+                        <li class="loadmore-item">
+                            <a href="" class="loadmore-link page-next"><i class="fas fa-angle-right"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <img src="./assets/img/logo/logo.jpg" alt="" style="width: 100px; height: 100px" class="footer-img">
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <p><i class="fas fa-search-location footer-item__icon"></i>Ha Noi, Viet Nam</p>
+                        </li>
+                        <li class="footer-item">
+                            <p><i class="fas fa-phone-square-alt footer-item__icon"></i>Phone: <a
+                                    href="tel:0398328925">0398328925</a></p>
+                        </li>
+                        <li class="footer-item">
+                            <p><i class="fas fa-envelope-square footer-item__icon"></i><a
+                                    href="mailto:huydz4102@gmail.com">huydz4102@gmail.com</a></p>
+                        </li>
+                        <li class="footer-item">
+                            <a href=""><i class="fab fa-facebook"
+                                    style="font-size: 2.4rem; margin-right: 1rem;"></i></a>
+                            <a href=""><i class="fab fa-instagram"
+                                    style="font-size: 2.4rem; margin-right: 1rem; color: violet;"></i></a>
+                            <a href=""><i class="fab fa-youtube"
+                                    style="font-size: 2.4rem; margin-right: 1rem; color: red;"></i></a>
+                            <a href=""><i class="fab fa-twitter" style="font-size: 2.4rem; margin-right: 1rem;"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <!-- style="cursor: pointer;" data-toggle="collapse" data-target="#demo1" aria-expanded="true" -->
+                    <h3 class="footer-heading">
+                        Thông tin của chúng tôi
+                        <!-- <i class="fas fa-chevron-circle-down"></i> -->
+                    </h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Cơ sở 1: Số 8 Ngõ 44/7/7 Nhân Hòa, Nhân Chính, Thanh
+                                Xuân, Hà Nội</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Cơ sở 2: Số 96 Định Công, Thanh Xuân, Hà Nội</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Lĩnh vực kinh doanh</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="footer-heading">Chính sách</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Chính sách bảo hành</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Chính sách đổi trả</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Chính sách thanh toán</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Chính sách giao nhận hàng</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Chính sách bảo mật</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="footer-heading">DANH MỤC</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="./index.html" class="footer-item__link">Trang chủ</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="./intro.html" class="footer-item__link">Giới thiệu</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="./product.html" class="footer-item__link">Sản phẩm</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Tin tức</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="./contact.html" class="footer-item__link">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-text">© Bản quyền thuộc về XChanel Shop</p>
+        </div>
+    </footer>
+    <div id="go-to-top">
+        <div class="btn-gototop">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    </div>
+    <script src="./assets/js/app.js"></script>
+    <script>
+        const apiNews = [
+            {
+                id: 1,
+                title: 'Tin tức về giày puma',
+                text: 'Trong phạm vi bài viết ngày hôm nay, hãy cùng Thanh Hùng Futsal khám phá mẫu giày đá bóng độc nhất vô nhị được nhà Swoosh thửa riêng cho cậu bé vàng của xứ sở Lục Lăng nhé!',
+                image: './assets/img/product/news1.jpg',
+                page: 1,
+            },
+            {
+                id: 2,
+                title: 'Người sáng lập đế chế puma',
+                text: 'PUMA ra mắt KING TOP DASSLER phiên bản giới hạn 20/11/2021 nhằm tôn vinh những di sản mà Rudolph Dassler, người sáng lập Puma để lại, mới đây hãng thể thao nước Đức đã cho ra đời phiên bản Puma King Top Dassler với chỉ giới hạn 100 đôi trên toàn thế giới. Đôi giày đá banh được thiết kế theo phong cách đơn giản, đúng với tinh thần của dòng sản phẩm Puma King. Upper là chất liệu da Kangaroo cao cấp với tone màu trắng chủ đạo lấy ý tưởng từ những bộ quần áo sạch sẽ mà cậu bé Dassler đã giặt thuê từ khi còn nhỏ, thông qua đó cũng xây dựng lên tinh thần kinh doanh và ý chí khởi nghiệp từ sớm của cậu.',
+                image: './assets/img/product/news2.jpg',
+                page: 1,
+            },
+            {
+                id: 3,
+                title: 'Thông tin bên lề Uero',
+                text: 'Bóng đá đã trở lại", câu nói tưởng chừng bình thường nhưng lại vô cùng ý nghĩa trong thời điểm hiện tại, khi mà chúng ta đang phải sống chung với đại dịch Covid-19. Các sân vận động chật kín cổ động viên với các tràng vỗ tay, tiếng cổ vũ cũng là một hình ảnh đánh dấu chiến thắng của nhân loại trước Covid-19. Bên cạnh các trận đấu bóng đá đỉnh cao đang diễn ra khắp các sân cỏ trên toàn thế giới, thì các ông lớn như Nike, adidas hay Puma, v.v...',
+                image: './assets/img/product/news3.jpg',
+                page: 1,
+            },
+            {
+                id: 4,
+                title: 'GIÀY ĐÁ BÓNG “PASSION RED”',
+                text: 'Hòa vào không khí cuồng nhiệt của mùa giải mới, Mizuno tung ra BST “Passion Red” với sự góp mặt của 2 dòng giày cao cấp: Mizuno Neo III β và Morelia II. Những đôi giày được khoác lên mình bộ cánh màu đỏ càng tăng thêm phần rực rỡ. Hãy cùng Sport9 tìm hiểu chi tiết về những đôi giày đá bóng Mizuno mới nhé!',
+                image: './assets/img/product/news4.jpg',
+                page: 1,
+            },
+            {
+                id: 5,
+                title: 'GIÀY ĐÁ BÓNG LUCENT PACK',
+                text: 'Mở đầu cho mùa giảm mới 22/23 vào tuần mà Premier League khởi tranh,  Nike tung bộ sưu tập giày đá bóng đầu tiên cho mùa giải - Lucent Pack với sự xuất hiện của các silo: Phantom GT II, Tiempo Legend 9 và Air Zoom Superfly và Air Zoom Vapor.',
+                image: './assets/img/product/news5.jpg',
+                page: 1,
+            },
+            {
+                id: 6,
+                title: 'BÓNG ĐÁ MỚI SHADOWPORTAL',
+                text: 'Sau sự ra mắt của bộ sưu tập giày đá bóng Game Data gần đây, adidas tiếp tục phát hành bộ sưu tập Shadowportal với màu đen làm chủ đạo. Tuy trái ngược hoàn toàn với Game Data nhưng BST lần này vẫn có những nét chấm phá khi bao gồm các màu từ X Speedportal, Predator Edge và Copa Sense.',
+                image: './assets/img/product/news6.jpg',
+                page: 1,
+            },
+            {
+                id: 7,
+                title: 'ADIDAS X SPEEDPORTAL',
+                text: 'Sau thành công vang dội của adidas X Speedflow, dòng giày nhanh nhất và phù hợp với mọi vị trí của adidas, giờ đây adidas ra mắt thế hệ tiếp theo thậm chí còn nhanh hơn và cải tiến hơn thế hệ trước.',
+                image: './assets/img/product/news7.jpg',
+                page: 1,
+            },
+            {
+                id: 8,
+                title: 'GIÀY BÓNG ĐÁ ADIDAS GAME DATA',
+                text: 'Dù đã xuất hiện trên sân cỏ một vài tuần trở lại đây, cuối cùng hôm nay bộ sưu tập Game Data của adidas cũng chính thức được ra mắt. Bộ sưu tập này khoác lên dòng giày Predator Edge và Copa Sense những màu sắc vô cùng tươi sáng, đặc biệt cùng với đó là sự xuất hiện hoàn toàn mới của X Speedportal.',
+                image: './assets/img/product/news8.jpg',
+                page: 1,
+            },
+            {
+                id: 9,
+                title: 'GIÀY BÓNG ĐÁ MORELIA NEO III SR4',
+                text: 'Sau khi Sergio Ramos chính thức trở thành đại diện cho Mizuno vào tháng 2, thương hiệu thế giới này đã cho ra mắt mẫu giày dành riêng cho anh ấy. Đôi giày đá bóng Mizuno Morelia Neo III β ‘SR4’ không chỉ mang chữ ký của Sergio Ramos mà còn lấy cảm hứng từ chính những hình xăm của cầu thủ này.',
+                image: './assets/img/product/news9.jpg',
+                page: 1,
+            },
+            {
+                id: 10,
+                title: 'Tin tức về giày puma',
+                text: 'Trong phạm vi bài viết ngày hôm nay, hãy cùng Thanh Hùng Futsal khám phá mẫu giày đá bóng độc nhất vô nhị được nhà Swoosh thửa riêng cho cậu bé vàng của xứ sở Lục Lăng nhé!',
+                image: './assets/img/product/image10.jpg',
+                page: 2,
+            },
+            {
+                id: 11,
+                title: 'Người sáng lập đế chế puma',
+                text: 'PUMA ra mắt KING TOP DASSLER phiên bản giới hạn 20/11/2021 nhằm tôn vinh những di sản mà Rudolph Dassler, người sáng lập Puma để lại, mới đây hãng thể thao nước Đức đã cho ra đời phiên bản Puma King Top Dassler với chỉ giới hạn 100 đôi trên toàn thế giới. Đôi giày đá banh được thiết kế theo phong cách đơn giản, đúng với tinh thần của dòng sản phẩm Puma King. Upper là chất liệu da Kangaroo cao cấp với tone màu trắng chủ đạo lấy ý tưởng từ những bộ quần áo sạch sẽ mà cậu bé Dassler đã giặt thuê từ khi còn nhỏ, thông qua đó cũng xây dựng lên tinh thần kinh doanh và ý chí khởi nghiệp từ sớm của cậu.',
+                image: './assets/img/product/image11.jpg',
+                page: 2,
+            },
+            {
+                id: 12,
+                title: 'Thông tin bên lề Uero',
+                text: 'Bóng đá đã trở lại", câu nói tưởng chừng bình thường nhưng lại vô cùng ý nghĩa trong thời điểm hiện tại, khi mà chúng ta đang phải sống chung với đại dịch Covid-19. Các sân vận động chật kín cổ động viên với các tràng vỗ tay, tiếng cổ vũ cũng là một hình ảnh đánh dấu chiến thắng của nhân loại trước Covid-19. Bên cạnh các trận đấu bóng đá đỉnh cao đang diễn ra khắp các sân cỏ trên toàn thế giới, thì các ông lớn như Nike, adidas hay Puma, v.v...',
+                image: './assets/img/product/image12.jpg',
+                page: 2,
+            },
+            {
+                id: 12,
+                title: 'GIÀY ĐÁ BÓNG “PASSION RED”',
+                text: 'Hòa vào không khí cuồng nhiệt của mùa giải mới, Mizuno tung ra BST “Passion Red” với sự góp mặt của 2 dòng giày cao cấp: Mizuno Neo III β và Morelia II. Những đôi giày được khoác lên mình bộ cánh màu đỏ càng tăng thêm phần rực rỡ. Hãy cùng Sport9 tìm hiểu chi tiết về những đôi giày đá bóng Mizuno mới nhé!',
+                image: './assets/img/product/image13.jpg',
+                page: 2,
+            },
+            {
+                id: 14,
+                title: 'GIÀY ĐÁ BÓNG LUCENT PACK',
+                text: 'Mở đầu cho mùa giảm mới 22/23 vào tuần mà Premier League khởi tranh,  Nike tung bộ sưu tập giày đá bóng đầu tiên cho mùa giải - Lucent Pack với sự xuất hiện của các silo: Phantom GT II, Tiempo Legend 9 và Air Zoom Superfly và Air Zoom Vapor.',
+                image: './assets/img/product/image14.jpg',
+                page: 2,
+            },
+            {
+                id: 15,
+                title: 'BÓNG ĐÁ MỚI SHADOWPORTAL',
+                text: 'Sau sự ra mắt của bộ sưu tập giày đá bóng Game Data gần đây, adidas tiếp tục phát hành bộ sưu tập Shadowportal với màu đen làm chủ đạo. Tuy trái ngược hoàn toàn với Game Data nhưng BST lần này vẫn có những nét chấm phá khi bao gồm các màu từ X Speedportal, Predator Edge và Copa Sense.',
+                image: './assets/img/product/image1.jpg',
+                page: 2,
+            },
+            {
+                id: 16,
+                title: 'ADIDAS X SPEEDPORTAL',
+                text: 'Sau thành công vang dội của adidas X Speedflow, dòng giày nhanh nhất và phù hợp với mọi vị trí của adidas, giờ đây adidas ra mắt thế hệ tiếp theo thậm chí còn nhanh hơn và cải tiến hơn thế hệ trước.',
+                image: './assets/img/product/image2.jpg',
+                page: 2,
+            },
+            {
+                id: 17,
+                title: 'GIÀY BÓNG ĐÁ ADIDAS GAME DATA',
+                text: 'Dù đã xuất hiện trên sân cỏ một vài tuần trở lại đây, cuối cùng hôm nay bộ sưu tập Game Data của adidas cũng chính thức được ra mắt. Bộ sưu tập này khoác lên dòng giày Predator Edge và Copa Sense những màu sắc vô cùng tươi sáng, đặc biệt cùng với đó là sự xuất hiện hoàn toàn mới của X Speedportal.',
+                image: './assets/img/product/image3.jpg',
+                page: 2,
+            },
+            {
+                id: 18,
+                title: 'GIÀY BÓNG ĐÁ MORELIA NEO III SR4',
+                text: 'Sau khi Sergio Ramos chính thức trở thành đại diện cho Mizuno vào tháng 2, thương hiệu thế giới này đã cho ra mắt mẫu giày dành riêng cho anh ấy. Đôi giày đá bóng Mizuno Morelia Neo III β ‘SR4’ không chỉ mang chữ ký của Sergio Ramos mà còn lấy cảm hứng từ chính những hình xăm của cầu thủ này.',
+                image: './assets/img/product/image45.jpg',
+                page: 2,
+            },
+            {
+                id: 19,
+                title: 'Tin tức về giày puma',
+                text: 'Trong phạm vi bài viết ngày hôm nay, hãy cùng Thanh Hùng Futsal khám phá mẫu giày đá bóng độc nhất vô nhị được nhà Swoosh thửa riêng cho cậu bé vàng của xứ sở Lục Lăng nhé!',
+                image: './assets/img/product/image42.jpg',
+                page: 3,
+            },
+            {
+                id: 20,
+                title: 'Người sáng lập đế chế puma',
+                text: 'PUMA ra mắt KING TOP DASSLER phiên bản giới hạn 20/11/2021 nhằm tôn vinh những di sản mà Rudolph Dassler, người sáng lập Puma để lại, mới đây hãng thể thao nước Đức đã cho ra đời phiên bản Puma King Top Dassler với chỉ giới hạn 100 đôi trên toàn thế giới. Đôi giày đá banh được thiết kế theo phong cách đơn giản, đúng với tinh thần của dòng sản phẩm Puma King. Upper là chất liệu da Kangaroo cao cấp với tone màu trắng chủ đạo lấy ý tưởng từ những bộ quần áo sạch sẽ mà cậu bé Dassler đã giặt thuê từ khi còn nhỏ, thông qua đó cũng xây dựng lên tinh thần kinh doanh và ý chí khởi nghiệp từ sớm của cậu.',
+                image: './assets/img/product/image40.jpg',
+                page: 3,
+            },
+            {
+                id: 21,
+                title: 'Thông tin bên lề Uero',
+                text: 'Bóng đá đã trở lại", câu nói tưởng chừng bình thường nhưng lại vô cùng ý nghĩa trong thời điểm hiện tại, khi mà chúng ta đang phải sống chung với đại dịch Covid-19. Các sân vận động chật kín cổ động viên với các tràng vỗ tay, tiếng cổ vũ cũng là một hình ảnh đánh dấu chiến thắng của nhân loại trước Covid-19. Bên cạnh các trận đấu bóng đá đỉnh cao đang diễn ra khắp các sân cỏ trên toàn thế giới, thì các ông lớn như Nike, adidas hay Puma, v.v...',
+                image: './assets/img/product/image39.jpg',
+                page: 3,
+            },
+            {
+                id: 22,
+                title: 'GIÀY ĐÁ BÓNG “PASSION RED”',
+                text: 'Hòa vào không khí cuồng nhiệt của mùa giải mới, Mizuno tung ra BST “Passion Red” với sự góp mặt của 2 dòng giày cao cấp: Mizuno Neo III β và Morelia II. Những đôi giày được khoác lên mình bộ cánh màu đỏ càng tăng thêm phần rực rỡ. Hãy cùng Sport9 tìm hiểu chi tiết về những đôi giày đá bóng Mizuno mới nhé!',
+                image: './assets/img/product/image33.jpg',
+                page: 3,
+            },
+            {
+                id: 23,
+                title: 'GIÀY ĐÁ BÓNG LUCENT PACK',
+                text: 'Mở đầu cho mùa giảm mới 22/23 vào tuần mà Premier League khởi tranh,  Nike tung bộ sưu tập giày đá bóng đầu tiên cho mùa giải - Lucent Pack với sự xuất hiện của các silo: Phantom GT II, Tiempo Legend 9 và Air Zoom Superfly và Air Zoom Vapor.',
+                image: './assets/img/product/image34.jpg',
+                page: 3,
+            },
+            {
+                id: 24,
+                title: 'BÓNG ĐÁ MỚI SHADOWPORTAL',
+                text: 'Sau sự ra mắt của bộ sưu tập giày đá bóng Game Data gần đây, adidas tiếp tục phát hành bộ sưu tập Shadowportal với màu đen làm chủ đạo. Tuy trái ngược hoàn toàn với Game Data nhưng BST lần này vẫn có những nét chấm phá khi bao gồm các màu từ X Speedportal, Predator Edge và Copa Sense.',
+                image: './assets/img/product/image37.jpg',
+                page: 3,
+            },
+            {
+                id: 25,
+                title: 'ADIDAS X SPEEDPORTAL',
+                text: 'Sau thành công vang dội của adidas X Speedflow, dòng giày nhanh nhất và phù hợp với mọi vị trí của adidas, giờ đây adidas ra mắt thế hệ tiếp theo thậm chí còn nhanh hơn và cải tiến hơn thế hệ trước.',
+                image: './assets/img/product/image36.jpg',
+                page: 3,
+            },
+            {
+                id: 26,
+                title: 'GIÀY BÓNG ĐÁ ADIDAS GAME DATA',
+                text: 'Dù đã xuất hiện trên sân cỏ một vài tuần trở lại đây, cuối cùng hôm nay bộ sưu tập Game Data của adidas cũng chính thức được ra mắt. Bộ sưu tập này khoác lên dòng giày Predator Edge và Copa Sense những màu sắc vô cùng tươi sáng, đặc biệt cùng với đó là sự xuất hiện hoàn toàn mới của X Speedportal.',
+                image: './assets/img/product/image29.jpg',
+                page: 3,
+            },
+            {
+                id: 27,
+                title: 'GIÀY BÓNG ĐÁ MORELIA NEO III SR4',
+                text: 'Sau khi Sergio Ramos chính thức trở thành đại diện cho Mizuno vào tháng 2, thương hiệu thế giới này đã cho ra mắt mẫu giày dành riêng cho anh ấy. Đôi giày đá bóng Mizuno Morelia Neo III β ‘SR4’ không chỉ mang chữ ký của Sergio Ramos mà còn lấy cảm hứng từ chính những hình xăm của cầu thủ này.',
+                image: './assets/img/product/image35.jpg',
+                page: 3,
+            },
+            {
+                id: 28,
+                title: 'Tin tức về giày puma',
+                text: 'Trong phạm vi bài viết ngày hôm nay, hãy cùng Thanh Hùng Futsal khám phá mẫu giày đá bóng độc nhất vô nhị được nhà Swoosh thửa riêng cho cậu bé vàng của xứ sở Lục Lăng nhé!',
+                image: './assets/img/product/image25.jpg',
+                page: 4,
+            },
+            {
+                id: 29,
+                title: 'Người sáng lập đế chế puma',
+                text: 'PUMA ra mắt KING TOP DASSLER phiên bản giới hạn 20/11/2021 nhằm tôn vinh những di sản mà Rudolph Dassler, người sáng lập Puma để lại, mới đây hãng thể thao nước Đức đã cho ra đời phiên bản Puma King Top Dassler với chỉ giới hạn 100 đôi trên toàn thế giới. Đôi giày đá banh được thiết kế theo phong cách đơn giản, đúng với tinh thần của dòng sản phẩm Puma King. Upper là chất liệu da Kangaroo cao cấp với tone màu trắng chủ đạo lấy ý tưởng từ những bộ quần áo sạch sẽ mà cậu bé Dassler đã giặt thuê từ khi còn nhỏ, thông qua đó cũng xây dựng lên tinh thần kinh doanh và ý chí khởi nghiệp từ sớm của cậu.',
+                image: './assets/img/product/image22.jpg',
+                page: 4,
+            },
+            {
+                id: 30,
+                title: 'Thông tin bên lề Uero',
+                text: 'Bóng đá đã trở lại", câu nói tưởng chừng bình thường nhưng lại vô cùng ý nghĩa trong thời điểm hiện tại, khi mà chúng ta đang phải sống chung với đại dịch Covid-19. Các sân vận động chật kín cổ động viên với các tràng vỗ tay, tiếng cổ vũ cũng là một hình ảnh đánh dấu chiến thắng của nhân loại trước Covid-19. Bên cạnh các trận đấu bóng đá đỉnh cao đang diễn ra khắp các sân cỏ trên toàn thế giới, thì các ông lớn như Nike, adidas hay Puma, v.v...',
+                image: './assets/img/product/image26.jpg',
+                page: 4,
+            },
+            {
+                id: 31,
+                title: 'GIÀY ĐÁ BÓNG “PASSION RED”',
+                text: 'Hòa vào không khí cuồng nhiệt của mùa giải mới, Mizuno tung ra BST “Passion Red” với sự góp mặt của 2 dòng giày cao cấp: Mizuno Neo III β và Morelia II. Những đôi giày được khoác lên mình bộ cánh màu đỏ càng tăng thêm phần rực rỡ. Hãy cùng Sport9 tìm hiểu chi tiết về những đôi giày đá bóng Mizuno mới nhé!',
+                image: './assets/img/product/image24.jpg',
+                page: 4,
+            },
+            {
+                id: 32,
+                title: 'GIÀY ĐÁ BÓNG LUCENT PACK',
+                text: 'Mở đầu cho mùa giảm mới 22/23 vào tuần mà Premier League khởi tranh,  Nike tung bộ sưu tập giày đá bóng đầu tiên cho mùa giải - Lucent Pack với sự xuất hiện của các silo: Phantom GT II, Tiempo Legend 9 và Air Zoom Superfly và Air Zoom Vapor.',
+                image: './assets/img/product/image25.jpg',
+                page: 4,
+            },
+            {
+                id: 33,
+                title: 'BÓNG ĐÁ MỚI SHADOWPORTAL',
+                text: 'Sau sự ra mắt của bộ sưu tập giày đá bóng Game Data gần đây, adidas tiếp tục phát hành bộ sưu tập Shadowportal với màu đen làm chủ đạo. Tuy trái ngược hoàn toàn với Game Data nhưng BST lần này vẫn có những nét chấm phá khi bao gồm các màu từ X Speedportal, Predator Edge và Copa Sense.',
+                image: './assets/img/product/news4.jpg',
+                page: 4,
+            },
+            {
+                id: 34,
+                title: 'ADIDAS X SPEEDPORTAL',
+                text: 'Sau thành công vang dội của adidas X Speedflow, dòng giày nhanh nhất và phù hợp với mọi vị trí của adidas, giờ đây adidas ra mắt thế hệ tiếp theo thậm chí còn nhanh hơn và cải tiến hơn thế hệ trước.',
+                image: './assets/img/product/news3.jpg',
+                page: 4,
+            },
+            {
+                id: 35,
+                title: 'GIÀY BÓNG ĐÁ ADIDAS GAME DATA',
+                text: 'Dù đã xuất hiện trên sân cỏ một vài tuần trở lại đây, cuối cùng hôm nay bộ sưu tập Game Data của adidas cũng chính thức được ra mắt. Bộ sưu tập này khoác lên dòng giày Predator Edge và Copa Sense những màu sắc vô cùng tươi sáng, đặc biệt cùng với đó là sự xuất hiện hoàn toàn mới của X Speedportal.',
+                image: './assets/img/product/news2.jpg',
+                page: 4,
+            },
+            {
+                id: 36,
+                title: 'GIÀY BÓNG ĐÁ MORELIA NEO III SR4',
+                text: 'Sau khi Sergio Ramos chính thức trở thành đại diện cho Mizuno vào tháng 2, thương hiệu thế giới này đã cho ra mắt mẫu giày dành riêng cho anh ấy. Đôi giày đá bóng Mizuno Morelia Neo III β ‘SR4’ không chỉ mang chữ ký của Sergio Ramos mà còn lấy cảm hứng từ chính những hình xăm của cầu thủ này.',
+                image: './assets/img/product/news1.jpg',
+                page: 4,
+            },
+            {
+                id: 37,
+                title: 'Tin tức về giày puma',
+                text: 'Trong phạm vi bài viết ngày hôm nay, hãy cùng Thanh Hùng Futsal khám phá mẫu giày đá bóng độc nhất vô nhị được nhà Swoosh thửa riêng cho cậu bé vàng của xứ sở Lục Lăng nhé!',
+                image: './assets/img/product/news1.jpg',
+                page: 5,
+            },
+            {
+                id: 38,
+                title: 'Người sáng lập đế chế puma',
+                text: 'PUMA ra mắt KING TOP DASSLER phiên bản giới hạn 20/11/2021 nhằm tôn vinh những di sản mà Rudolph Dassler, người sáng lập Puma để lại, mới đây hãng thể thao nước Đức đã cho ra đời phiên bản Puma King Top Dassler với chỉ giới hạn 100 đôi trên toàn thế giới. Đôi giày đá banh được thiết kế theo phong cách đơn giản, đúng với tinh thần của dòng sản phẩm Puma King. Upper là chất liệu da Kangaroo cao cấp với tone màu trắng chủ đạo lấy ý tưởng từ những bộ quần áo sạch sẽ mà cậu bé Dassler đã giặt thuê từ khi còn nhỏ, thông qua đó cũng xây dựng lên tinh thần kinh doanh và ý chí khởi nghiệp từ sớm của cậu.',
+                image: './assets/img/product/news2.jpg',
+                page: 5,
+            },
+            {
+                id: 39,
+                title: 'Thông tin bên lề Uero',
+                text: 'Bóng đá đã trở lại", câu nói tưởng chừng bình thường nhưng lại vô cùng ý nghĩa trong thời điểm hiện tại, khi mà chúng ta đang phải sống chung với đại dịch Covid-19. Các sân vận động chật kín cổ động viên với các tràng vỗ tay, tiếng cổ vũ cũng là một hình ảnh đánh dấu chiến thắng của nhân loại trước Covid-19. Bên cạnh các trận đấu bóng đá đỉnh cao đang diễn ra khắp các sân cỏ trên toàn thế giới, thì các ông lớn như Nike, adidas hay Puma, v.v...',
+                image: './assets/img/product/news3.jpg',
+                page: 5,
+            },
+            {
+                id: 40,
+                title: 'GIÀY ĐÁ BÓNG “PASSION RED”',
+                text: 'Hòa vào không khí cuồng nhiệt của mùa giải mới, Mizuno tung ra BST “Passion Red” với sự góp mặt của 2 dòng giày cao cấp: Mizuno Neo III β và Morelia II. Những đôi giày được khoác lên mình bộ cánh màu đỏ càng tăng thêm phần rực rỡ. Hãy cùng Sport9 tìm hiểu chi tiết về những đôi giày đá bóng Mizuno mới nhé!',
+                image: './assets/img/product/news4.jpg',
+                page: 5,
+            },
+            {
+                id: 41,
+                title: 'GIÀY ĐÁ BÓNG LUCENT PACK',
+                text: 'Mở đầu cho mùa giảm mới 22/23 vào tuần mà Premier League khởi tranh,  Nike tung bộ sưu tập giày đá bóng đầu tiên cho mùa giải - Lucent Pack với sự xuất hiện của các silo: Phantom GT II, Tiempo Legend 9 và Air Zoom Superfly và Air Zoom Vapor.',
+                image: './assets/img/product/news5.jpg',
+                page: 5,
+            },
+            {
+                id: 42,
+                title: 'BÓNG ĐÁ MỚI SHADOWPORTAL',
+                text: 'Sau sự ra mắt của bộ sưu tập giày đá bóng Game Data gần đây, adidas tiếp tục phát hành bộ sưu tập Shadowportal với màu đen làm chủ đạo. Tuy trái ngược hoàn toàn với Game Data nhưng BST lần này vẫn có những nét chấm phá khi bao gồm các màu từ X Speedportal, Predator Edge và Copa Sense.',
+                image: './assets/img/product/news6.jpg',
+                page: 5,
+            },
+            {
+                id: 43,
+                title: 'ADIDAS X SPEEDPORTAL',
+                text: 'Sau thành công vang dội của adidas X Speedflow, dòng giày nhanh nhất và phù hợp với mọi vị trí của adidas, giờ đây adidas ra mắt thế hệ tiếp theo thậm chí còn nhanh hơn và cải tiến hơn thế hệ trước.',
+                image: './assets/img/product/news7.jpg',
+                page: 5,
+            },
+            {
+                id: 44,
+                title: 'GIÀY BÓNG ĐÁ ADIDAS GAME DATA',
+                text: 'Dù đã xuất hiện trên sân cỏ một vài tuần trở lại đây, cuối cùng hôm nay bộ sưu tập Game Data của adidas cũng chính thức được ra mắt. Bộ sưu tập này khoác lên dòng giày Predator Edge và Copa Sense những màu sắc vô cùng tươi sáng, đặc biệt cùng với đó là sự xuất hiện hoàn toàn mới của X Speedportal.',
+                image: './assets/img/product/news8.jpg',
+                page: 5,
+            },
+            {
+                id: 45,
+                title: 'GIÀY BÓNG ĐÁ MORELIA NEO III SR4',
+                text: 'Sau khi Sergio Ramos chính thức trở thành đại diện cho Mizuno vào tháng 2, thương hiệu thế giới này đã cho ra mắt mẫu giày dành riêng cho anh ấy. Đôi giày đá bóng Mizuno Morelia Neo III β ‘SR4’ không chỉ mang chữ ký của Sergio Ramos mà còn lấy cảm hứng từ chính những hình xăm của cầu thủ này.',
+                image: './assets/img/product/news9.jpg',
+                page: 5,
+            }
+        ]
+        const listItemNews = document.getElementById('new')
+        function initNews() {
+            var listNews = apiNews.map(apiNew => {
+                for (var page = 1; page <= 5; page++) {
+                    if (apiNew.page == page) {
+                        return `
+                        <div class="col-lg-4 col-md-6 mb-20 page-${apiNew.page} hidden">
+                            <a href="./newsDetail.html" class="product__new-item">
+                                <div class="card" style="width: 100%">
+                                    <img src="${apiNew.image}" alt="" class="card-img-top" style="height: 230px;">
+                                    <div class="card-body">
+                                        <h4 class="card-title">${apiNew.title}</h4>
+                                        <p class="card-text custom__name-product" style="font-weight: 400;">${apiNew.text}</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    `                        
+                    }
+                }
+            })
+            listItemNews.innerHTML = listNews.join('')
+        }
+        initNews()
+        document.querySelectorAll(`.page-1`).forEach(ele =>{
+            ele.classList.toggle('hidden')
+        })
+        $('.page-prev').addEventListener('click', (e)=>{
+            e.preventDefault()
+            
+        })
+        $('.page-next').addEventListener('click', (e)=>{
+            e.preventDefault()  
+        })
+        var indexList = document.querySelectorAll('.loadmore-link.pagination')
+        indexList.forEach((item, index) =>{
+            item.addEventListener('click', (e)=>{
+                e.preventDefault()
+                var indexItem  = indexList[index].innerHTML
+                document.querySelectorAll('.page-1').forEach(ele =>{
+                    ele.classList.toggle('hidden')
+                })
+                $(`.pagination.actived`).classList.remove('actived')
+                $(`.pagination.page${indexItem}`).classList.add('actived')
+
+                var pageSelect = Number(indexItem)
+                if (pageSelect > 1 && pageSelect < 5) {
+                    $('.page-prev').classList.remove('disabled')
+                    $('.page-next').classList.remove('disabled')
+                }
+                if (pageSelect == 1) {
+                    $('.page-prev').classList.add('disabled')
+                    $('.page-next').classList.remove('disabled')
+                }
+                if (pageSelect == 5) {
+                    $('.page-prev').classList.remove('disabled')
+                    $('.page-next').classList.add('disabled')
+                }
+                initNews()
+                apiNews.map(apiNew =>{
+                    if (Number(indexItem) === apiNew.page) {
+                        $$(`.page-${indexItem}.hidden`).forEach(element => {
+                            element.classList.remove('hidden')
+                        })
+                    }
+                })
+            })
+        })
+    </script>
+</body>
+
+</html>

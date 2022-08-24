@@ -1,0 +1,147 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --header-height: 160px;
+    --hover-color: #ee4d2d;
+    --blue-color: blue;
+    --green-color: green;
+    --green-color: green;
+    --gray-color: gray;
+    --yellow-color:yellow;
+    --red-color: red;
+    --orange-color:orange;
+    --violet-color:violet;
+}
+* {
+     box-sizing: inherit;
+}
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto' ,serif;
+    box-sizing: border-box;
+}
+.green {
+    background-color: green;
+}
+.white {
+    background-color: #fff;
+}
+.black {
+    background-color: #000;
+}
+.blue {
+    background-color: blue;
+}
+.gray {
+    background-color: gray;
+}
+.yellow {
+    background-color: yellow;
+}
+.red {
+    background-color: red;
+}
+.orange {
+    background-color: orange;
+}
+.violet {
+    background-color: violet;
+}
+.display {
+    display: block;
+    transition: .8s;
+}
+.undisplay {
+    display: none;
+    transition: .8s;
+}
+.white-color {
+    color: #fff !important;
+}
+body {
+    /* overflow: hidden; */
+}
+.right {
+    float: right;
+}
+a:hover {
+    text-decoration: none;
+    /* color: var(--black-color); */
+}
+.btn-buynow {
+    border: 1px solid var(--black-color);
+    background: none;
+    padding: 10px 20px;
+    font-size: 1.6rem;
+    margin: auto;
+    text-transform: uppercase;
+    color: var(--white-color);
+    font-weight: 700;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    float: right;
+    border-radius: 4px;
+}
+.btn-buynow span, .btn-buynow i {
+    position: relative;
+    z-index: 1;
+}
+
+.btn-buynow::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--black-color);
+    transition: 0.8s;
+    z-index: 1;
+    border-radius: 50% 50% 0 0;
+    height: 180%;
+}
+.btn-buynow:hover span{
+    text-decoration: none;
+    color: var(--black-color) !important;
+}
+.btn-buynow:hover::before {
+    height: 0%;
+}
+.card {
+    border-radius: unset !important;
+}
+.product-buynow {
+    float: left;
+    width: 250px;
+}
+.btn-default {
+        position: absolute;
+        right: -15px;
+        top: -12px;
+        width: 30px;
+        font-size: 14px;
+        height: 30px;
+        text-align: center;
+        line-height: 2px;
+        border-radius: 50%;
+        background: #000;
+        color: #fff;
+        padding: 0;
+}
+.hidden {
+    display: none !important;
+}
+.actived {
+    display: block;
+}
+html {
+    scroll-behavior: smooth;
+}
+.center {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}

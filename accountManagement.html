@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Clothes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- link font chữ -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- link icon -->
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- link css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/productdetail.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./assets/img/logo/favicon.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Overlay -->
+    <div class="overlay hidden"></div>
+    <div class="mobile-menu ">
+        <div class="mobile-menu__header">
+            <a href="./accountManagement.html">
+                <div class="mobile-menu__auth">
+                    <img src="./assets/img/product/giayxah2.jpg" alt="" class="__auth-img">
+                    <p class="__auth-text">Đăng nhập <br> Nhận nhiều ưu đãi hơn</p>
+                </div>
+            </a>
+            <div class="mobie-menu__close">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <ul class="__auth-list">
+            <li class="__auth-item">
+                <a href="./login.html" class="__auth-link">Đăng nhập</a>
+            </li>
+            <li class="__auth-item">
+                <a href="./register.html" class="__auth-link">Đăng ký</a>
+            </li>
+        </ul>
+        <div class="category">
+            <h3 class="category-title">Danh mục</h3>
+            <ul class="category-list">
+                <li class="category-item">
+                    <a href="./index.html" class="category-link">Trang chủ</a>
+                </li>
+                <li class="category-item">
+                    <a href="./intro.html" class="category-link">Giới thiệu</a>
+                </li>
+                <li class="category-item">
+                    <a href="./product.html" class="category-link key">
+                        Sản phẩm
+                        <i class="fas fa-plus cong category-icon"></i><i
+                            class="fas fa-minus tru category-icon hidden"></i>
+                    </a>
+                    <ul class="__list hidden">
+                        <li class="__item ">
+                            <a href="./product.html" class="__link">
+                                Tất cả sản phẩm
+                                <i class="fas fa-plus cong1 category-icon" onclick="show2(1)"></i><i
+                                    class="fas fa-minus tru1 category-icon hidden" onclick="show2(1)"></i>
+                            </a>
+                            <ul class="__list1 list-item1 hidden">
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Bóng đá</a>
+                                </li>
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Chạy</a>
+                                </li>
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Cầu lông</a>
+                                </li>
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Bóng rổ</a>
+                                </li>
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Golf</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="__item">
+                            <a href="./product.html" class="__link">
+                                Giày, Dép
+                                <i class="fas fa-plus cong2 category-icon" onclick="show2(2)"></i><i
+                                    class="fas fa-minus tru2 category-icon hidden" onclick="show2(2)"></i>
+                            </a>
+                            <ul class="__list1 list-item2 hidden">
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Bóng đá</a>
+                                </li>
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Bóng rổ</a>
+                                </li>
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Cầu lông</a>
+                                </li>
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Chạy</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="__item">
+                            <a href="./product.html" class="__link">
+                                Quần, Áo
+                                <i class="fas fa-plus cong3 category-icon" onclick="show2(3)"></i><i
+                                    class="fas fa-minus tru3 category-icon hidden" onclick="show2(3)"></i>
+                            </a>
+                            <ul class="__list1 list-item3 hidden">
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Váy</a>
+                                </li>
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Áo dài</a>
+                                </li>
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Áo sơ mi</a>
+                                </li>
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Quần ngắn</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="__item">
+                            <a href="./product.html" class="__link">
+                                Phụ kiện
+                                <i class="fas fa-plus cong4 category-icon" onclick="show2(4)"></i><i
+                                    class="fas fa-minus tru4 category-icon hidden" onclick="show2(4)"></i>
+                            </a>
+                            <ul class="__list1 list-item4 hidden">
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Vợt</a>
+                                </li>
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Cà vạt</a>
+                                </li>
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Thắt lưng</a>
+                                </li>
+                                <li class="__item1">
+                                    <a href="./product.html" class="__link1">Kính</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="category-item">
+                    <a href="./news.html" class="category-link">Tin tức</a>
+                </li>
+                <li class="category-item">
+                    <a href="./contact.html" class="category-link">Liên hệ</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="top-link clearfix ">
+                <div class="row">
+                    <div class="col-6 social_link">
+                        <div class="social-title">Theo dõi:</div>
+                        <a href=""><i class="fab fa-facebook" style="font-size: 2.4rem; margin-right: 1rem;"></i></a>
+                        <a href=""><i class="fab fa-instagram"
+                                style="font-size: 2.4rem; margin-right: 1rem; color: violet;"></i></a>
+                        <a href=""><i class="fab fa-youtube"
+                                style="font-size: 2.4rem; margin-right: 1rem; color: red;"></i></a>
+                        <a href=""><i class="fab fa-twitter" style="font-size: 2.4rem; margin-right: 1rem;"></i></a>
+                    </div>
+                    <div class="col-6 login-link">
+                        <ul class="header_link right">
+                            <li>
+                                <a href="./login.html"><i class="fas fa-sign-in-alt mr-2"></i>Đăng nhập</a>
+                            </li>
+                            <li>
+                                <a href="./register.html"><i class="fas fa-user-plus mr-2"
+                                        style="margin-left: 2rem;"></i>Đăng ký</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header-main clearfix">
+                <div class="row">
+                    <div class="col-lg-3 mobile-header">
+                        <div class="header-bars">
+                            <i class="fas fa-bars header-bars__icon"></i>
+                        </div>
+                        <div class="logo">
+                            <a href="">
+                                <img src="./assets/img/logo/logo.jpg" alt="" class="logo-img">
+                            </a>
+                        </div>
+                        <div class="header-card">
+                            <a href="./cart.html" class="item-like__like">
+                                <i class="fas fa-shopping-cart item-like__icon"></i>
+                                <span class="item-like__notice">3</span>
+                            </a>
+                            <a href="./favorite.html" class="item-cart__like">
+                                <i class="far fa-heart item-cart__icon"></i>
+                                <span class="item-cart__notice">3</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 m-auto">
+                        <form action="" class="example">
+                            <input type="text" name="search" id="" class="input-search" placeholder="Tìm kiếm">
+                            <button type="submit" class="search-btn"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                    <div class="col-3 m-auto mobile-none">
+                        <div class="item-like clearfix">
+                            <a href="./cart.html" class="item-like__like">
+                                <i class="fas fa-shopping-cart item-like__icon"></i>
+                                <span class="item-like__notice">3</span>
+                            </a>
+                        </div>
+                        <div class="item-cart clearfix">
+                            <a href="./favorite.html" class="item-cart__like">
+                                <i class="far fa-heart item-cart__icon"></i>
+                                <span class="item-cart__notice">3</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="header-nav">
+                <div class="container">
+                    <ul class="header-nav__list">
+                        <li class="header-nav__item">
+                            <a href="./index.html">Trang chủ</a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="./intro.html">Giới thiệu</a>
+                        </li>
+                        <li class="header-nav__item product-list">
+                            <a href="./product.html">Sản phẩm<i class="fas fa-angle-right ml-2"></i></a>
+                            <div class="mega-content">
+                                <div class="row">
+                                    <div class="col-8 ">
+                                        <ul class="mega-content__list">
+                                            <li class="mega-content__item">
+                                                <a href="./product.html" class="mega-content__link">Tất cả sản phẩm</a>
+                                            </li>
+                                            <li class="mega-content__item list-mega">
+                                                <a href="./product.html" class="mega-content__link">Giày, dép</a>
+                                                <ul class="list">
+                                                    <li class="item">
+                                                        <a href="#" class="item-link">Bóng đá</a>
+                                                    </li>
+                                                    <li class="item">
+                                                        <a href="./product.html" class="item-link">Bóng rổ</a>
+                                                    </li>
+                                                    <li class="item">
+                                                        <a href="./product.html" class="item-link">Cầu lông</a>
+                                                    </li>
+                                                    <li class="item">
+                                                        <a href="./product.html" class="item-link">Chạy</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="mega-content__item list-mega">
+                                                <a href="./product.html" class="mega-content__link ">Quần, áo</a>
+                                                <ul class="list">
+                                                    <li class="item">
+                                                        <a href="./product.html" class="item-link">Váy</a>
+                                                    </li>
+                                                    <li class="item">
+                                                        <a href="./product.html" class="item-link">Áo dài</a>
+                                                    </li>
+                                                    <li class="item">
+                                                        <a href="./product.html" class="item-link">Áo sơ mi</a>
+                                                    </li>
+                                                    <li class="item">
+                                                        <a href="./product.html" class="item-link">Quần ngắn</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="mega-content__item list-mega">
+                                                <a href="./product.html" class="mega-content__link">Phụ kiện</a>
+                                                <ul class="list">
+                                                    <li class="item">
+                                                        <a href="./product.html" class="item-link">Vợt</a>
+                                                    </li>
+                                                    <li class="item">
+                                                        <a href="./product.html" class="item-link">Cà vạt</a>
+                                                    </li>
+                                                    <li class="item">
+                                                        <a href="./product.html" class="item-link">Thắt lưng</a>
+                                                    </li>
+                                                    <li class="item">
+                                                        <a href="./product.html" class="item-link">Kính</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-4 ">
+                                        <a href="./product.html">
+                                            <picture>
+                                                <img src="./assets/img/bigsale.gif" alt="" class="picture-sale">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="./news.html">Tin tức</a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="./contact.html">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Container -->
+    <div class="container">
+        <div class="wrapper">
+            <div class="row">
+                <div class="col-lg-4 col-12">
+                    <div class="heading-info">
+                        <img src="./assets/img/noavatar.jpg" alt="" class="heading-info__img">
+                        <span class="heading-account">Huy Nguyễn</span>
+                    </div>
+                    <ul class="menu-manager">
+                        <li class="item-manager my-profile manager-1 active" onclick="optionManager(1)">
+                            <i class="fas fa-user" style="margin-right: 10px;"></i>
+                            <span class="item-name">Hồ sơ của tôi</span>
+                        </li>
+                        <li class="item-manager my-password manager-2" onclick="optionManager(2)">
+                            <i class="fas fa-key" style="margin-right: 10px;"></i>
+                            <span class="item-name">Đổi mật khẩu</span>
+                        </li>
+                        <li class="item-manager my-order manager-3" onclick="optionManager(3)">
+                            <i class="fas fa-shopping-bag" style="margin-right: 10px;"></i>
+                            <span class="item-name">Đơn hàng của tôi</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-8 col-12">
+                    <ul class="menu-detail">
+                        <li class="item-detail detail-1 active">
+                            <form method="post" id="form-3" class="form"  class="detail-profile">
+                                <h1 class="detail-title">Hồ sơ của tôi</h1>
+                                <div class="form-group">
+                                    <label for="fullname" class="form-label">Họ tên</label>
+                                    <input type="text" name="fullname" id="fullname" placeholder="Hãy nhập họ và tên"
+                                        class="form-control">
+                                        <span class="form-message"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" name="email" id="email" placeholder="Hãy nhập email"
+                                        class="form-control">
+                                        <span class="form-message"></span>
+                                </div>
+                                <div class="form-group" style="position: relative;">
+                                    <label for="address" class="form-label">Địa chỉ</label>
+                                    <input type="type" name="address" id="address" placeholder="Hãy nhập mật khẩu"
+                                        class="form-control">
+                                        <span class="form-message"></span>
+                                </div>
+                                <div class="form-group" style="position: relative;">
+                                    <label for="phone" class="form-label">Số điện thoại</label>
+                                    <input type="type" name="phone" id="phone" placeholder="Hãy nhập mật khẩu"
+                                        class="form-control">
+                                        <span class="form-message"></span>
+                                </div>
+                                <div class="form-group" style="position: relative;">
+                                    <label for="avatar" class="form-label">Cập nhật avatar</label>
+                                    <input type="file" name="avatar" id="avatar" placeholder="Hãy nhập mật khẩu"
+                                        class="form-control">
+                                        <span class="form-message"></span>
+                                </div>
+                                <button class="form-submit btn btn-buynow">
+                                    <a href="">
+                                        <span>Lưu</span>
+                                    </a>
+                                </button>
+                            </form>
+                        </li>
+                        <li class="item-detail detail-2">
+                            <div class="detail-changepassword">
+                                <h1 class="detail-title">Đổi lại mật khẩu</h1>
+                                <div class="form-group" style="position: relative;">
+                                    <label for="password" class="form-label">Mật khẩu cũ</label>
+                                    <input type="password" name="password" id="password-0"
+                                        placeholder="Hãy nhập mật khẩu cũ" class="form-control">
+                                        <span class="show-hide">
+                                            <i class="fas fa-eye fa-eye-0" onclick="showPass(0)"></i>
+                                        </span>
+                                </div>
+                                <div class="form-group" style="position: relative;">
+                                    <label for="password-1" class="form-label">Mật khẩu mới</label>
+                                    <input type="password" name="password-1" id="password-1"
+                                        placeholder="Hãy nhập mật khẩu mới" class="form-control">
+                                        <span class="show-hide">
+                                            <i class="fas fa-eye fa-eye-1" onclick="showPass(1)"></i>
+                                        </span>
+                                </div>
+                                <div class="form-group" style="position: relative;">
+                                    <label for="password-2" class="form-label">Nhập lại mật khẩu mới</label>
+                                    <input type="password" name="password-2" id="password-2"
+                                        placeholder="Hãy nhập lại mật khẩu mới" class="form-control">
+                                        <span class="show-hide">
+                                            <i class="fas fa-eye fa-eye-2" onclick="showPass(2)"></i>
+                                        </span>
+                                </div>
+                                <button class="form-submit btn btn-buynow">
+                                    <a href="">
+                                        <span>Lưu</span>
+                                    </a>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="item-detail detail-3">
+                            <div class="detail-order">
+                                <h1 class="detail-title">Đơn hàng của bạn</h1>
+                                <table class="table table-hover" style="font-size: 16px;">
+                                    <thead>
+                                        <tr class="center" >
+                                            <th>Mã đơn hàng</th>
+                                            <th>Ngày</th>
+                                            <th>Tổng tiền</th>
+                                            <th>Trạng thái</th>
+                                            <th>Chi tiết</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="center" >
+                                            <td>#1</td>
+                                            <td>20-08-2022</td>
+                                            <td>3.000.000 VNĐ</td>
+                                            <td><span class="status blue">Đang xác nhận</span></td>
+                                            <td><a href="" data-toggle="modal" data-target="#myModal">Xem</a></td>
+                                        </tr>
+                                        <tr class="center" >
+                                            <td>#2</td>
+                                            <td>20-08-2022</td>
+                                            <td>3.000.000 VNĐ</td>
+                                            <td><span class="status green">Đang giao</span></td>
+                                            <td><a href="" data-toggle="modal" data-target="#myModal">Xem</a></td>
+                                        </tr>
+                                        <tr class="center" >
+                                            <td>#3</td>
+                                            <td>20-08-2022</td>
+                                            <td>3.000.000 VNĐ</td>
+                                            <td><span class="status red">Đã Hủy</span></td>
+                                            <td><a href="" data-toggle="modal" data-target="#myModal">Xem</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <img src="./assets/img/logo/logo.jpg" alt="" style="width: 100px; height: 100px" class="footer-img">
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <p><i class="fas fa-search-location footer-item__icon"></i>Ha Noi, Viet Nam</p>
+                        </li>
+                        <li class="footer-item">
+                            <p><i class="fas fa-phone-square-alt footer-item__icon"></i>Phone: <a
+                                    href="tel:0398328925">0398328925</a></p>
+                        </li>
+                        <li class="footer-item">
+                            <p><i class="fas fa-envelope-square footer-item__icon"></i><a
+                                    href="mailto:huydz4102@gmail.com">huydz4102@gmail.com</a></p>
+                        </li>
+                        <li class="footer-item">
+                            <a href=""><i class="fab fa-facebook"
+                                    style="font-size: 2.4rem; margin-right: 1rem;"></i></a>
+                            <a href=""><i class="fab fa-instagram"
+                                    style="font-size: 2.4rem; margin-right: 1rem; color: violet;"></i></a>
+                            <a href=""><i class="fab fa-youtube"
+                                    style="font-size: 2.4rem; margin-right: 1rem; color: red;"></i></a>
+                            <a href=""><i class="fab fa-twitter" style="font-size: 2.4rem; margin-right: 1rem;"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <!-- style="cursor: pointer;" data-toggle="collapse" data-target="#demo1" aria-expanded="true" -->
+                    <h3 class="footer-heading">
+                        Thông tin của chúng tôi
+                        <!-- <i class="fas fa-chevron-circle-down"></i> -->
+                    </h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Cơ sở 1: Số 8 Ngõ 44/7/7 Nhân Hòa, Nhân Chính, Thanh
+                                Xuân, Hà Nội</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Cơ sở 2: Số 96 Định Công, Thanh Xuân, Hà Nội</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Lĩnh vực kinh doanh</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="footer-heading">Chính sách</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Chính sách bảo hành</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Chính sách đổi trả</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Chính sách thanh toán</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Chính sách giao nhận hàng</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Chính sách bảo mật</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="footer-heading">DANH MỤC</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="./index.html" class="footer-item__link">Trang chủ</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="./intro.html" class="footer-item__link">Giới thiệu</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="./product.html" class="footer-item__link">Sản phẩm</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="./news.html" class="footer-item__link">Tin tức</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="./contact.html" class="footer-item__link">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-text">© Bản quyền thuộc về XChanel Shop</p>
+        </div>
+    </footer>
+    <div class="modal show" id="myModal" aria-modal="true" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Chi tiết đơn hàng</h3>
+                    <button type="button" class="close" data-dismiss="modal"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="row">
+                    <div class="modal-body col-12">
+                        <table class="table table-hover" style="font-size: 1.6rem;">
+                            <thead>
+                                <tr>
+                                    <th>Ảnh</th>
+                                    <th>Tên sản phẩm</th>
+                                    <th>Màu</th>
+                                    <th>Giá</th>
+                                    <th>Số lượng</th>
+                                    <th>Thành tiền</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th><img src="./assets/img/product/image1.jpg" alt=""
+                                            style="width: 50px; border-radius: 4px;"></th>
+                                    <th>ADIDAS</th>
+                                    <th>Trắng</th>
+                                    <th>1.000.000đ</th>
+                                    <th>1</th>
+                                    <th>1.000.000đ</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="./assets/img/product/image1.jpg" alt=""
+                                            style="width: 50px; border-radius: 4px;"></th>
+                                    <th>ADIDAS</th>
+                                    <th>Trắng</th>
+                                    <th>1.000.000đ</th>
+                                    <th>1</th>
+                                    <th>1.000.000đ</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="./assets/img/product/image1.jpg" alt=""
+                                            style="width: 50px; border-radius: 4px;"></th>
+                                    <th>ADIDAS</th>
+                                    <th>Trắng</th>
+                                    <th>1.000.000đ</th>
+                                    <th>1</th>
+                                    <th>1.000.000đ</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="go-to-top">
+        <div class="btn-gototop">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    </div>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/validator.js"></script>
+    <script>
+        var listManager = document.querySelectorAll('.item-manager')
+
+        function optionManager(id) {
+            var listManager = document.querySelectorAll('.item-manager')
+            listManager.forEach(item => {
+                item.classList.remove('active')
+            })
+            var listDetail = document.querySelectorAll('.item-detail')
+            listDetail.forEach(item => {
+                item.classList.remove('active')
+            })
+            $(`.manager-${id}`).classList.add('active')
+            $(`.detail-${id}`).classList.add('active')
+        }
+        function showPass(id){
+            if(document.querySelector(`#password-${id}`).type = 'password'){
+                    document.querySelector(`#password-${id}`).type = 'type'
+                    document.querySelector(`.fa-eye-${id}`).classList.add('hide')
+                }
+                else {
+                    document.querySelector(`#password-${id}`).type = 'password'
+                    document.querySelector(`.fa-eye-${id}`).classList.remove('hide')
+                }
+        }
+        Validator({
+            form: '#form-3',
+            formGroupSelector: '.form-group',
+            errorSelector: '.form-message',
+            rules: [
+                Validator.isRequired('#fullname', 'Vui lòng nhập đầy đủ họ tên'),
+                Validator.isRequired('#email', 'Vui lòng nhập email'),
+                Validator.isEmail('#email'),
+                Validator.isRequired('#address', 'Vui lòng nhập địa chỉ'),
+                Validator.isRequired('#phone', 'Vui lòng nhập số điện thoại'),
+                Validator.minLength('#phone', 10)
+            ],
+            onSubmit: function(data){
+                console.log(data);
+            }
+        })
+    </script>
+</body>
+
+</html>

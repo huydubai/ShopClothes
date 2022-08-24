@@ -653,7 +653,7 @@
             $(`.detail-${id}`).classList.add('active')
         }
         function showPass(id){
-            if(document.querySelector(`#password-${id}`).type = 'password'){
+            if(document.querySelector(`#password-${id}`).type === 'password'){
                     document.querySelector(`#password-${id}`).type = 'type'
                     document.querySelector(`.fa-eye-${id}`).classList.add('hide')
                 }

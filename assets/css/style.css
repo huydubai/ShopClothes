@@ -122,9 +122,6 @@
 
 
 /* Header main */
-.header-main {
-    /* width: 100%; */
-}
 .logo {
     width: 90px;
     height: 90px;
@@ -1338,9 +1335,6 @@
     line-height: 1.8rem;
     margin-bottom: 10px;
 }
-.rating-feedback__tag {
-    /* display: flex; */
-}
 .tag-list {
     display: flex;
     padding-left: 0;
@@ -1499,7 +1493,7 @@
     display: block;
 }
 .favorite-link:hover {
-    color: var(--text-color);
+    color: var(--black-color);
 }
 .favorite-item {
     margin: 0 5px;
@@ -1519,7 +1513,7 @@
 }
 .favorite-link1:hover, .favorite-link2:hover {
     background-color: #f9f9f9;
-    color: var(--text-color);
+    color: var(--black-color);
 }
 .favorite-update {
     margin: 0 0 0 auto;
@@ -1530,9 +1524,7 @@
     padding: 2px 5px;
     color: var(--hover-color);
 }
-.product__favorite {
-    /* padding-top: 20px; */
-}
+
 .product__favorite-all {
    margin: 10px auto;
 }
@@ -1578,7 +1570,7 @@
     font-weight: 600;
 }
 .option-link:hover {
-    color: var(--text-color);
+    color: var(--black-color);
     background-color: var(--white-color);
 }
 .option-item:last-child {
@@ -1996,9 +1988,7 @@
     -webkit-line-clamp: 1;
     overflow: hidden;
 }
-.delivery-mobile {
 
-}
 .delivery-mobile__left {
     align-items: center;
     justify-content: center;
@@ -2278,9 +2268,6 @@
 .sex-item {
     display: flex;
 }
-.sex-item span {
-    /* display: inline; */
-}
 .check-sex {
     position: relative;
     width: 20px;
@@ -2290,13 +2277,6 @@
 }
 .sex-name {
     margin-left: 10px;
-}
-.sex-input {
-    /* position: absolute; */
-    /* top: 0; */
-    /* left: 0; */
-    /* visibility: hidden;
-    opacity: 0; */
 }
 .form-check-inline {
     font-size: 16px;

@@ -540,8 +540,8 @@
 
 
 .news-all {
-    margin-top: 20px;
     display: flex;
+    margin-bottom: 30px;
 }
 .news-all:hover a{
     color: #666;
@@ -550,7 +550,7 @@
     color: var(--black-color);
     font-size: 1.8rem;
     font-weight: 500;
-    margin: 10px auto 0 auto; 
+    margin: 0 auto; 
 }
 .news-all-icon {
     font-size: 1.4rem;

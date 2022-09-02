@@ -102,6 +102,10 @@ a:hover {
     border-radius: 50% 50% 0 0;
     height: 180%;
 }
+.btn-buynow span, .btn-buynow i {
+    color: #fff;
+}
+
 .btn-buynow:hover span{
     text-decoration: none;
     color: var(--black-color) !important;
@@ -131,7 +135,7 @@ a:hover {
         padding: 0;
 }
 .hidden {
-    display: none !important;
+    display: none;
 }
 .actived {
     display: block;

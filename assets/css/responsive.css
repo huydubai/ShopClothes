@@ -70,7 +70,7 @@
         display: none;
     }
     .sortby2 {
-        display: block;
+        display: block !important;
     }
     .product__sort-right {
         display: flex;

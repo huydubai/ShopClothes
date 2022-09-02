@@ -67,7 +67,11 @@
     display: none;
     opacity: 0;
     visibility: hidden;
+<<<<<<< HEAD
     /* border: 1px solid red; */
+=======
+/*     border: 1px solid red; */
+>>>>>>> 0c22566fff17540a16d79d2486fbca74b916cdc3
     transform-origin: top 40px;
     animation: fadeIn 0.3s ease-in forwards;
 }
